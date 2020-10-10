@@ -1,0 +1,944 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/*********     head     ************/
+.head {
+  width: 1263px;
+  height: 340px;
+  background: url("../img/ia_100000144.jpg") center center no-repeat;
+  position: relative;
+  background-size: 170% 100%; }
+  .head .header_top {
+    /*------header-top--------*/
+    width: 100%;
+    height: 60px; }
+    .head .header_top .prc_logo {
+      float: left; }
+      .head .header_top .prc_logo img {
+        width: 90px;
+        height: 60px;
+        border-radius: 50% 50%; }
+      .head .header_top .prc_logo p {
+        float: right;
+        color: white;
+        margin-left: 30px;
+        line-height: 60px; }
+        .head .header_top .prc_logo p i {
+          display: inline-block;
+          width: 12px;
+          height: 6px;
+          background-image: url("../img/4.png");
+          background-size: 100% 100%; }
+      .head .header_top .prc_logo p:hover {
+        cursor: pointer; }
+    .head .header_top .nav {
+      float: right; }
+      .head .header_top .nav li {
+        float: left;
+        height: 40px;
+        margin: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0); }
+        .head .header_top .nav li a {
+          color: white;
+          font-size: 14px;
+          line-height: 40px; }
+        .head .header_top .nav li a:hover {
+          font-weight: bold; }
+      .head .header_top .nav #active {
+        border-bottom: 2px solid white; }
+      .head .header_top .nav #login {
+        position: relative; }
+        .head .header_top .nav #login a:nth-child(1) {
+          width: 20px;
+          height: 20px;
+          border-left: 1px solid white;
+          position: absolute;
+          padding-left: 5px;
+          right: 28px;
+          top: 13px; }
+          .head .header_top .nav #login a:nth-child(1) img {
+            position: absolute;
+            border-radius: 60%; }
+  .head .header_middle {
+    width: 1263px;
+    height: 70px;
+    z-index: 1000;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; }
+    .head .header_middle .prc_logo {
+      float: left; }
+      .head .header_middle .prc_logo img {
+        width: 60px;
+        height: 60px; }
+      .head .header_middle .prc_logo p {
+        float: right;
+        color: black;
+        margin-left: 30px;
+        line-height: 60px; }
+        .head .header_middle .prc_logo p i {
+          display: inline-block;
+          width: 12px;
+          height: 6px;
+          background-image: url("../img/4.png");
+          background-size: 100% 100%; }
+      .head .header_middle .prc_logo p:hover {
+        cursor: pointer; }
+    .head .header_middle .nav {
+      float: right; }
+      .head .header_middle .nav li {
+        float: left;
+        height: 40px;
+        margin: 20px;
+        border-bottom: 1px solid rgba(38, 175, 45, 0); }
+        .head .header_middle .nav li a {
+          color: black;
+          font-size: 14px;
+          line-height: 40px; }
+        .head .header_middle .nav li a:hover {
+          font-weight: bold; }
+      .head .header_middle .nav #active {
+        border-bottom: 2px solid #26af2d; }
+      .head .header_middle .nav #login {
+        position: relative; }
+        .head .header_middle .nav #login a:nth-child(1) {
+          width: 20px;
+          height: 20px;
+          border-left: 1px solid black;
+          position: absolute;
+          padding-left: 5px;
+          right: 28px;
+          top: 13px; }
+          .head .header_middle .nav #login a:nth-child(1) img {
+            position: absolute;
+            border-radius: 60%; }
+  .head .header_bottom {
+    /*-------header_bottom---------*/
+    height: 235px;
+    width: 100%;
+    color: white;
+    position: relative; }
+    .head .header_bottom .index_title {
+      height: 56px;
+      width: 660px;
+      margin-top: 45px;
+      margin-left: 150px;
+      font-weight: bold; }
+      .head .header_bottom .index_title p {
+        font-size: 32px;
+        color: #fbf101; }
+        .head .header_bottom .index_title p span {
+          color: white;
+          font-size: 20px; }
+    .head .header_bottom .inputBox {
+      width: 660px;
+      height: 59px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: white;
+      margin-left: 150px; }
+      .head .header_bottom .inputBox input {
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        width: 560px;
+        font-size: 20px;
+        outline: none; }
+      .head .header_bottom .inputBox span {
+        display: inline-block;
+        height: 50px;
+        width: 90px;
+        background-color: #3cb46d;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 4px;
+        border-radius: 0 5px 5px 0; }
+      .head .header_bottom .inputBox span:hover {
+        background-color: #29a75d;
+        cursor: pointer; }
+    .head .header_bottom div {
+      height: 270px;
+      width: 212px;
+      position: absolute;
+      right: 110px;
+      bottom: 0; }
+      .head .header_bottom div img {
+        height: 100%;
+        width: 100%; }
+
+/*********     header_message     ************/
+.header_message {
+  display: block;
+  width: 1200px;
+  height: 270px;
+  background-color: white;
+  position: relative;
+  top: -80px;
+  left: 32px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px gray;
+  margin-bottom: 30px; }
+  .header_message .left {
+    width: 700px;
+    margin: 0;
+    float: left; }
+    .header_message .left .index_title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 40px; }
+      .header_message .left .index_title span {
+        display: inline-block;
+        width: 6px;
+        height: 12px;
+        margin: 0 5px; }
+        .header_message .left .index_title span img {
+          width: 100%;
+          height: 100%; }
+    .header_message .left .index_title:hover {
+      color: green;
+      cursor: pointer; }
+    .header_message .left .index_table {
+      box-sizing: border-box; }
+      .header_message .left .index_table .index_car {
+        border-collapse: separate;
+        border-spacing: 15px;
+        text-align: center; }
+        .header_message .left .index_table .index_car td {
+          width: 100px;
+          vertical-align: center;
+          font-size: 12px;
+          padding: 0; }
+          .header_message .left .index_table .index_car td img {
+            width: 20px;
+            margin-top: 5px;
+            display: block;
+            border: none;
+            float: left; }
+          .header_message .left .index_table .index_car td span {
+            display: block;
+            float: none;
+            height: 27px;
+            line-height: 27px; }
+        .header_message .left .index_table .index_car td:hover {
+          cursor: pointer;
+          color: green; }
+  .header_message .right {
+    width: 480px;
+    float: left; }
+    .header_message .right .right_title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 40px;
+      width: 400px;
+      height: 50px;
+      margin-left: 75px; }
+      .header_message .right .right_title p {
+        float: left; }
+      .header_message .right .right_title span {
+        display: inline-block;
+        width: 6px;
+        height: 12px;
+        margin: 0 5px; }
+        .header_message .right .right_title span img {
+          width: 100%;
+          height: 100%; }
+      .header_message .right .right_title i {
+        font-size: 14px;
+        color: gray;
+        font-weight: 0;
+        display: block;
+        float: right;
+        line-height: 20px; }
+    .header_message .right .right_title p:hover {
+      color: green;
+      cursor: pointer; }
+    .header_message .right .right_input {
+      width: 375px;
+      height: 55px;
+      margin-left: 75px;
+      position: relative; }
+      .header_message .right .right_input input {
+        height: 50px;
+        width: 250px;
+        border: 0;
+        float: left;
+        margin-right: 5px;
+        border-radius: 5px;
+        background-color: #f5f5f7;
+        outline: none; }
+      .header_message .right .right_input p {
+        width: 115px;
+        height: 50px;
+        background-color: #3cb46d;
+        float: left;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 50px;
+        color: white; }
+      .header_message .right .right_input a:hover {
+        background-color: green; }
+      .header_message .right .right_input #error {
+        background: none;
+        position: absolute;
+        top: 0px;
+        right: 128px;
+        line-height: 46px;
+        font-size: 12px;
+        color: #f76367;
+        width: 250px;
+        text-align: right;
+        display: none;
+        background: #fcb9bc; }
+    .header_message .right .right_server {
+      width: 375px;
+      height: 58px;
+      background-color: #f0fff6;
+      margin: 20px 75px;
+      color: #3cb46d; }
+      .header_message .right .right_server a {
+        color: #3cb46d; }
+        .header_message .right .right_server a span {
+          display: inline-block;
+          width: 170px;
+          height: 50px;
+          text-align: center;
+          line-height: 55px; }
+        .header_message .right .right_server a:hover {
+          color: green; }
+
+/*********     content_top     ************/
+.content_top {
+  width: 1200px;
+  height: 457px;
+  margin: 0 0 0 32px;
+  display: block; }
+  .content_top .change_img {
+    height: 225px; }
+    .content_top .change_img ul li {
+      width: 300px;
+      height: 225px;
+      float: left;
+      position: relative; }
+      .content_top .change_img ul li img {
+        width: 100%;
+        height: 100%; }
+      .content_top .change_img ul li i {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px; }
+    .content_top .change_img .usedCar {
+      background-image: url("http://cli-sta.guazistatic.com/c2c_web/ershou2.9622dba5dc5179b7d20a0084d5c41990.png");
+      background-size: 100% 100%; }
+    .content_top .change_img .yanCar {
+      background-size: 100% 100%;
+      background-image: url("http://cli-sta.guazistatic.com/c2c_web/yanxuan2.5ad2f9dcd798ee4f9b9469875327a0a2.png"); }
+    .content_top .change_img .selling {
+      background-size: 100% 100%;
+      background-image: url("http://cli-sta.guazistatic.com/c2c_web/maiche2.8741e6b8d150855cd0914bc5bbd40232.jpg"); }
+    .content_top .change_img .financial {
+      background-size: 100% 100%;
+      background-image: url("http://cli-sta.guazistatic.com/c2c_web/jinrong2.cbeaf4a85c95d8b9fb2b05fa526e0c4f.png"); }
+    .content_top .change_img #active {
+      background-size: 100% 100%;
+      background-image: url("http://cli-sta.guazistatic.com/c2c_web/ershou.5b609a564a8686c63a02793d97cbc552.jpg"); }
+      .content_top .change_img #active i {
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        background-size: 100% 100%;
+        background-image: url("../img/ia_100000156.png");
+        left: 50%;
+        bottom: -10px;
+        margin-left: -10px; }
+  .content_top .change_car {
+    height: 178px;
+    margin-left: 23px;
+    float: left; }
+    .content_top .change_car ol li {
+      width: 160px;
+      height: 100%;
+      margin-right: 36px;
+      margin-top: 60px;
+      float: left; }
+      .content_top .change_car ol li img {
+        width: 160px;
+        height: 70px; }
+      .content_top .change_car ol li p {
+        text-align: center;
+        margin-top: 15px; }
+      .content_top .change_car ol li p:last-child {
+        color: #3cb46d; }
+      .content_top .change_car ol li img:hover {
+        cursor: pointer; }
+
+/*********     hotCar     ************/
+.hotCar {
+  height: 1253px;
+  background: #f5f5f7;
+  margin-bottom: 20px; }
+  .hotCar #active {
+    color: black; }
+  .hotCar .index_p {
+    font-size: 28px;
+    color: #000;
+    line-height: 28px;
+    margin: 0 31.5px;
+    padding-top: 52.5px; }
+  .hotCar .index_nav ul {
+    padding-top: 30px;
+    padding-bottom: 17.5px;
+    height: 22.5px;
+    margin: 0 0 20px 31.5px; }
+    .hotCar .index_nav ul .active {
+      color: black; }
+    .hotCar .index_nav ul li {
+      height: 32px;
+      display: inline-block;
+      margin-right: 28px;
+      font-size: 16px;
+      color: #999;
+      cursor: pointer;
+      line-height: 16px; }
+  .hotCar .index_car {
+    height: 1024px; }
+    .hotCar .index_car li:hover {
+      box-shadow: 1px 1px 5px gray; }
+    .hotCar .index_car ul {
+      display: none; }
+  .hotCar .index_car li {
+    width: 280px;
+    height: 319px;
+    margin-left: 31.5px;
+    margin-bottom: 19px;
+    float: left;
+    background: white; }
+  .hotCar .index_car ul li a {
+    width: 280px;
+    height: 319px;
+    float: left;
+    background: white;
+    position: relative; }
+    .hotCar .index_car ul li a img {
+      width: 100%; }
+    .hotCar .index_car ul li a h2 {
+      margin: 20px 20px;
+      font-size: 17px;
+      color: black;
+      font-weight: 400;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .hotCar .index_car ul li a .t-i {
+      margin: 0 20px;
+      color: #a5abb2; }
+    .hotCar .index_car ul li a .t-price {
+      height: 30px;
+      font-size: 20px;
+      color: #fa5428;
+      padding-left: 19px;
+      margin-top: 10px; }
+      .hotCar .index_car ul li a .t-price p {
+        float: left;
+        line-height: 30px; }
+      .hotCar .index_car ul li a .t-price .line-through {
+        text-decoration: line-through;
+        font-size: 14px;
+        float: left;
+        margin-top: 7px;
+        margin-left: 10px;
+        color: #a5abb2; }
+    .hotCar .index_car ul li a .icon-new {
+      background-image: url("../img/ia_100000250.png");
+      background-size: 451px 300px;
+      background-position: -36px -100px;
+      line-height: 48px;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 30px;
+      display: block;
+      width: 60px;
+      height: 55px;
+      text-align: center;
+      color: #fff;
+      top: -5px;
+      left: 11px;
+      font-size: 12px; }
+  .hotCar .index_many {
+    padding-top: 12px;
+    text-align: center;
+    height: 14px; }
+    .hotCar .index_many a:hover {
+      cursor: pointer; }
+  .hotCar .index_many a {
+    color: black;
+    height: 20px;
+    width: 120px;
+    margin: 0 auto; }
+    .hotCar .index_many a .icon {
+      display: inline-block;
+      background-image: url("../img/ia_100000250.png");
+      background-size: 451px 300px;
+      width: 16px;
+      height: 17px;
+      vertical-align: top;
+      margin-left: 10px;
+      margin-top: 5px;
+      background-position: -183px 0; }
+
+/*********     newCar     ************/
+.newCar {
+  width: 100%;
+  height: 500px; }
+  .newCar a {
+    display: block;
+    float: left; }
+  .newCar .content_second:hover, .newCar .content_last:hover {
+    background-color: #f9f9f9; }
+  .newCar .title {
+    font-size: 28px;
+    font-weight: unset;
+    line-height: 28px;
+    margin: 50px 0 30px 31.5px; }
+  .newCar .content_first {
+    width: 227px;
+    height: 346px;
+    margin: 5px 20px 5px 31px; }
+    .newCar .content_first img {
+      width: 100%;
+      height: 100%; }
+  .newCar .content_second, .newCar .content_last {
+    width: 227px;
+    height: 346px;
+    background: #f5f5f7;
+    margin: 5px 20px 5px 0; }
+    .newCar .content_second img, .newCar .content_last img {
+      margin-top: 85px;
+      width: 100%; }
+    .newCar .content_second div, .newCar .content_last div {
+      font-size: 16px;
+      text-align: center;
+      padding-top: 35px; }
+      .newCar .content_second div p:first-child, .newCar .content_last div p:first-child {
+        margin-bottom: 15px;
+        color: black; }
+      .newCar .content_second div p:last-child, .newCar .content_last div p:last-child {
+        color: red; }
+  .newCar .content_third {
+    width: 470px;
+    height: 100%;
+    margin: 5px 20px 5px 0; }
+    .newCar .content_third .third_top, .newCar .content_third .third_bottom {
+      background: #f5f5f7;
+      width: 470px;
+      height: 165px;
+      margin-bottom: 16px; }
+      .newCar .content_third .third_top img, .newCar .content_third .third_bottom img {
+        float: left;
+        width: 263px;
+        height: 89px;
+        margin-top: 38px; }
+      .newCar .content_third .third_top div, .newCar .content_third .third_bottom div {
+        font-size: 16px;
+        padding-top: 35px; }
+        .newCar .content_third .third_top div p:first-child, .newCar .content_third .third_bottom div p:first-child {
+          margin-bottom: 15px;
+          color: black; }
+        .newCar .content_third .third_top div p:last-child, .newCar .content_third .third_bottom div p:last-child {
+          color: red; }
+    .newCar .content_third div:hover {
+      background-color: #f9f9f9; }
+  .newCar .content_last img {
+    width: 150px;
+    height: 158px;
+    margin: 30px 0 0 30px; }
+
+/*********    banner     ************/
+.index-buysell-step {
+  width: 100%;
+  height: 431.5px;
+  position: relative;
+  font-size: 14px;
+  z-index: 1;
+  background-color: greenyellow; }
+  .index-buysell-step .step-tab {
+    position: absolute;
+    top: 67px;
+    left: 50%;
+    z-index: 11;
+    width: 186px;
+    margin-left: -546px;
+    color: black; }
+    .index-buysell-step .step-tab span {
+      display: inline-block;
+      width: 66px;
+      font-size: 16px;
+      color: #181818;
+      padding-bottom: 6px;
+      border-bottom: 3px solid transparent;
+      cursor: pointer; }
+    .index-buysell-step .step-tab .active {
+      color: green;
+      border-bottom: 3px solid green; }
+    .index-buysell-step .step-tab em {
+      padding: 0 20px;
+      color: #d2d2d2; }
+  .index-buysell-step .slide-mask {
+    position: absolute;
+    width: 100%;
+    height: 431.5px;
+    top: 0;
+    left: -70px;
+    z-index: 10;
+    background: url("http://cli-sta.guazistatic.com/c2c_web/mask.3642195d3f6eed370c899cc57e6f772e.png") no-repeat top; }
+  .index-buysell-step .slide-area {
+    position: absolute;
+    width: 100%;
+    height: 431.5px;
+    overflow: hidden;
+    z-index: 9; }
+    .index-buysell-step .slide-area ul {
+      display: none; }
+    .index-buysell-step .slide-area .active {
+      display: block; }
+    .index-buysell-step .slide-area .slide-list {
+      position: relative;
+      width: 100%;
+      height: 400px; }
+      .index-buysell-step .slide-area .slide-list li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 431.5px; }
+        .index-buysell-step .slide-area .slide-list li img {
+          height: 431.5px;
+          position: absolute;
+          left: -400px; }
+  .index-buysell-step #active {
+    display: block;
+    z-index: 10; }
+  .index-buysell-step .step-slide {
+    height: 400px;
+    position: relative;
+    display: none; }
+    .index-buysell-step .step-slide .slide-items {
+      position: absolute;
+      top: 146px;
+      left: 50%;
+      z-index: 10;
+      width: 500px;
+      margin-left: -546px; }
+      .index-buysell-step .step-slide .slide-items li {
+        display: none;
+        padding-top: 116px;
+        position: relative; }
+      .index-buysell-step .step-slide .slide-items .active {
+        display: block; }
+        .index-buysell-step .step-slide .slide-items .active .slide-title, .index-buysell-step .step-slide .slide-items .active .slide-text {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 500px;
+          overflow: hidden;
+          white-space: nowrap;
+          color: black;
+          font-size: 40px; }
+        .index-buysell-step .step-slide .slide-items .active .slide-text {
+          top: 69px;
+          font-size: 19px; }
+  .index-buysell-step .carNav .active .slide-icon {
+    color: green; }
+  .index-buysell-step .carNav .active .slide-icon span {
+    background: url("http://cli-sta.guazistatic.com/c2c_web/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png");
+    background-size: 451px 300px; }
+  .index-buysell-step .carNav .active .icon-buy-order span {
+    background-position: 2px -60px; }
+  .index-buysell-step .carNav .active .icon-buy-see span {
+    background-position: -40px -60px; }
+  .index-buysell-step .carNav .active .icon-buy-contract span {
+    background-position: -80px -60px; }
+  .index-buysell-step .carNav .active .icon-buy-deal span {
+    background-position: -120px -60px; }
+  .index-buysell-step .carNav .active .icon-sell-info span {
+    background-position: -350px 2px; }
+  .index-buysell-step .carNav .active .icon-sell-service span {
+    background-position: -350px -30px; }
+  .index-buysell-step .carNav .active .icon-sell-see span {
+    background-position: -350px -65px; }
+  .index-buysell-step .carNav .active .icon-sell-deal span {
+    background-position: -350px -102px; }
+  .index-buysell-step .carNav {
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    height: 60px;
+    display: none; }
+    .index-buysell-step .carNav li {
+      position: relative;
+      float: left;
+      top: -140px;
+      left: 70px; }
+    .index-buysell-step .carNav .slide-icon {
+      position: relative;
+      float: left;
+      width: 56px;
+      color: #999;
+      margin-right: 60px;
+      cursor: pointer;
+      display: block; }
+      .index-buysell-step .carNav .slide-icon i {
+        position: absolute;
+        right: -35px;
+        bottom: 4px;
+        width: 13px;
+        height: 10px;
+        background: url("http://cli-sta.guazistatic.com/c2c_web/next2.3d5a92aa1fec4ed61930edca0ea95564.png");
+        background-size: 100% 100%; }
+      .index-buysell-step .carNav .slide-icon span {
+        display: block;
+        width: 32px;
+        height: 40px;
+        margin: 0 auto 6px;
+        background: url("http://cli-sta.guazistatic.com/c2c_web/icon_@2x_s.5dfd8e0395d1a3188c98507b746b6df4.png");
+        background-size: 451px 300px; }
+    .index-buysell-step .carNav .icon-buy-order span {
+      background-position: 2px -20px; }
+    .index-buysell-step .carNav .icon-buy-see span {
+      background-position: -40px -20px; }
+    .index-buysell-step .carNav .icon-buy-contract span {
+      background-position: -80px -20px; }
+    .index-buysell-step .carNav .icon-buy-deal span {
+      background-position: -120px -20px; }
+    .index-buysell-step .carNav .icon-sell-info span {
+      background-position: -300px 2px; }
+    .index-buysell-step .carNav .icon-sell-service span {
+      background-position: -300px -30px; }
+    .index-buysell-step .carNav .icon-sell-see span {
+      background-position: -300px -65px; }
+    .index-buysell-step .carNav .icon-sell-deal span {
+      background-position: -300px -102px; }
+
+/*********    ask     ************/
+.ask {
+  width: 100%;
+  height: 864px; }
+  .ask img {
+    width: 100%;
+    height: 100%; }
+
+/*********    advertising     ************/
+.advertising {
+  height: 120px;
+  background: url("http://cli-sta.guazistatic.com/c2c_web/foot-buysell-entry.6170e8f3cb5feb45f1d1e2a0b1d3c2e0.jpg") no-repeat top; }
+  .advertising .ad_left {
+    width: 50%;
+    text-align: center;
+    height: 120px;
+    line-height: 100px;
+    float: left; }
+    .advertising .ad_left p:first-child {
+      height: 40px;
+      display: block;
+      font-size: 30px;
+      margin-left: auto;
+      font-weight: bolder;
+      font-family: "楷体"; }
+      .advertising .ad_left p:first-child span {
+        color: green; }
+    .advertising .ad_left p:last-child {
+      font-size: 15px; }
+  .advertising .ad_right {
+    height: 120px;
+    text-align: left; }
+    .advertising .ad_right a:first-of-type, .advertising .ad_right a:last-child {
+      margin-top: 30px;
+      float: left;
+      width: 179px;
+      margin-left: 23px;
+      line-height: 64px;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      background: #3cb46d; }
+    .advertising .ad_right a:last-child {
+      background: #97cf00; }
+
+/*********       footer       ************/
+.footer {
+  height: 348px;
+  background: #2a2c37; }
+  .footer .footer_top {
+    width: 1190px;
+    margin: 0 auto;
+    height: 160px;
+    position: relative; }
+    .footer .footer_top .logo {
+      width: 102px;
+      height: 102px;
+      float: left;
+      background: url("https://image.guazistatic.com/gz01190923/15/39/f3eebb2bedbd15fc6fb8e3226bf35e44.png") no-repeat;
+      background-size: 100% 100%; }
+    .footer .footer_top .phone {
+      float: left;
+      width: 378px;
+      padding-left: 30px;
+      color: #b8b8b8;
+      font-size: 14px; }
+      .footer .footer_top .phone div:first-child {
+        margin-bottom: 20px;
+        margin-top: 10px; }
+      .footer .footer_top .phone p {
+        margin: 5px 0 0 0; }
+    .footer .footer_top .erWeiMa {
+      float: left;
+      width: 85px;
+      height: 105px;
+      margin-top: 4px;
+      margin-right: 30px;
+      text-align: center;
+      display: block; }
+      .footer .footer_top .erWeiMa img {
+        width: 100%; }
+      .footer .footer_top .erWeiMa p {
+        color: #b8b8b8; }
+      .footer .footer_top .erWeiMa span {
+        width: 80px;
+        height: 16px;
+        background: #22ac38;
+        font-size: 10px;
+        color: #fff;
+        display: inline-block;
+        line-height: 16px; }
+    .footer .footer_top .about {
+      float: left;
+      width: 390px;
+      padding-left: 20px;
+      background: transparent;
+      margin: 0;
+      overflow: hidden; }
+      .footer .footer_top .about div {
+        line-height: 22px;
+        font-size: 14px;
+        padding-bottom: 8px; }
+        .footer .footer_top .about div a {
+          color: #b8b8b8;
+          margin-right: 5px; }
+      .footer .footer_top .about p {
+        line-height: 20px;
+        font-size: 12px;
+        color: #b8b8b8; }
+      .footer .footer_top .about .arc-info {
+        font-size: 12px;
+        display: block;
+        margin-bottom: 5px; }
+      .footer .footer_top .about .police {
+        display: inline-block;
+        text-decoration: none;
+        color: #939393;
+        line-height: 28px;
+        padding-left: 24px;
+        font-size: 12px; }
+        .footer .footer_top .about .police span {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background: url("http://cli-sta.guazistatic.com/c2c_web/icon-foot.8db09594385dc9fbd737a66b0ffc26e3.png");
+          background-position: 0 -62px; }
+    .footer .footer_top .copyright {
+      height: 28px;
+      line-height: 28px;
+      width: 1190px;
+      color: #666;
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .footer .footer_bottom a {
+    color: #666;
+    line-height: 28px;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 12px; }
+  .footer .footer_bottom .friendly-link {
+    width: 1100px;
+    padding: 0 0 0 90px;
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 auto; }
+    .footer .footer_bottom .friendly-link .link-tit {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 90px;
+      height: 28px;
+      font-size: 16px;
+      color: #666; }
+    .footer .footer_bottom .friendly-link .close-box {
+      position: absolute;
+      right: 0;
+      display: block;
+      width: 16px;
+      height: 9px;
+      font-size: 0;
+      line-height: 0;
+      cursor: pointer;
+      bottom: 10px;
+      background-position: -90px -100px;
+      display: none; }
